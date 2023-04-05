@@ -1,0 +1,78 @@
+.animated-background {
+    background-image: url('../Background/pewdiepie-red-and-black-wavy-background-uhd-4k-wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animateBackground 20s linear infinite;
+}
+
+@keyframes animateBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.about-us, .about-materials {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.scroll-up {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background-image: url('scroll-up.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-up:hover {
+    opacity: 1;
+}
+ 
